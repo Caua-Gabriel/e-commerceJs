@@ -1,13 +1,19 @@
-const mode = document.getElementById('button-mode');
+const mode = document.getElementById('mode-icon');
 mode.addEventListener('click',() => {
-    if(mode.classList.contains('toggle-right')){
-        mode.classList.remove('toggle-right');
-        mode.classList.add('toggle-left');
+    const form = document.getElementById('login-container')
+    if(mode.classList.contains('fa-moon')){
+        mode.classList.remove('fa-moon');
+        mode.classList.add('fa-sun');
+
+        form.classList.add('fa-sun');
+
 
         return;
 
     }
 
-    mode.classList.add('toggle-right');
-        mode.classList.remove('toggle-left');
+    mode.classList.add('fa-moon');
+        mode.classList.remove('fa-sun');
+        form.classList.remove('dark');
+
 });

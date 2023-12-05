@@ -3,6 +3,7 @@
 :root {
     --color-background: #ffff;
     --color-black: #0000;
+    --color-blue-gradient: rgba(26, 0, 81, 1);
 }
 
 * {
@@ -12,8 +13,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,18 +22,17 @@ body {
     width: 200vh;
 }
 
-.button-mode{
+.container-icon{
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    
+    justify-content: end;
+    align-items: flex-end;
 }
 
-.button-mode-darklight{
-    border: none;
-    background-color: var(--color-background);
-    cursor: pointer;
+.container-icon i {
+    font-size: 2rem;
 }
+
+
 
 .card-image {
     height: 100vh;
@@ -104,4 +104,10 @@ body {
     font-size: 1rem;
 
 
+}
+
+body.dark{
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    background-color: var(--color-blue-gradient); /* Cor de fundo desejada para o modo escuro */
+    color: #ffffff; /* Cor do texto no modo escuro */
 }
