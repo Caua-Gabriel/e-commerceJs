@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Login Page</title>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form  method="post">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="senha">Password</label>
-            <input type="password" id="senha" name="senha" required>
-
-            <button type="submit">Login</button>
-        </form>
-
-        <a href="cadastro.php">Cadastre-se</a>
+    <div class="card-image" >
+        <img class="img" src="img/logo.png" alt="">
     </div>
+    <div class="login-container">
+        <header class="button-mode" >       
+            <button class="button-mode-darklight" ><img src="img/toggle-left.png" alt=""></button>
+        </header>
+        <form class="card-login">
+            <label class="user" for="user">User</label>
+            <div class="input-field">
+                <input type="user" id="user" name="user" required>
+            </div>
+            <label class= "password" for="password">Password</label>
+            <div class="input-field" >
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            
+            <div class="buttons">
+                <button type="submit">Login</button>
+                <button type="submit">Register</button>
+            </div>
+            <a href="http://"><img class="icon" src="img/icongoogle.png" alt="Login with Google"></a>
+        </form>
+    </div>
+
+    <script src="assets/js/login.js" ></script>
 </body>
 </html>
