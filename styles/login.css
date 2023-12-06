@@ -95,8 +95,8 @@ body {
 }
 
 .input-field input {
-    width: 15rem;
-    padding: 0.5rem 0.5rem;
+    width: 35rem;
+    padding: 0rem 0.5rem;
     border: none;
     outline: none;
     border-bottom: 2px solid var(--color-black);
