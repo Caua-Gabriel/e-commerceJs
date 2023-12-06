@@ -2,7 +2,7 @@
 
 :root {
     --color-background: #ffff;
-    --color-black: #0000;
+    --color-black: #000000;
     --color-blue-gradient: rgba(26, 0, 81, 1);
 }
 
@@ -64,7 +64,7 @@ body {
     gap: 3rem;
 }
 
-.user,
+.email,
 .password {
     display: flex;
     flex-direction: row;
@@ -88,6 +88,11 @@ body {
     border-radius: 4rem;
 }
 
+.buttons a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
 .icon {
     width: 3rem;
     height: 3rem;
@@ -104,10 +109,4 @@ body {
     font-size: 1rem;
 
 
-}
-
-body.dark{
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
-    background-color: var(--color-blue-gradient); /* Cor de fundo desejada para o modo escuro */
-    color: #ffffff; /* Cor do texto no modo escuro */
 }
